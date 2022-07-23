@@ -57,6 +57,6 @@ async def main_func(bot: Stark, msg: Message):
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 Stark.log(str(e), logging.WARN)
-    await msg.react("Successful! Deleted Everything. For more bots visit @StarkBots")
+    await msg.react("Successful! Deleted Everything.")
     await status.delete()
     await userbot.leave_chat(msg.chat.id)
